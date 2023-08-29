@@ -1,3 +1,5 @@
+import "../styles.css";
+
 import React, { useContext, useState } from "react";
 import { BookmarkContext } from "../context/BookmarkContext";
 
@@ -26,11 +28,9 @@ const BookmarkForm = () => {
     setFormData({ id: 0, title: "", url: "" });
   };
 
-  console.log(formData);
-  console.log(state);
   return (
     <div>
-      <form onSubmit={submitHandler}>
+      <form onSubmit={submitHandler} className="bookmark-form">
         <div>
           <label htmlFor="title">Title: </label>
           <input
@@ -39,6 +39,7 @@ const BookmarkForm = () => {
             name="title"
             onChange={inputHandler}
             required
+            className="input-box"
           />
         </div>
         <div>
@@ -49,9 +50,10 @@ const BookmarkForm = () => {
             name="url"
             onChange={inputHandler}
             required
+            className="input-box"
           />
         </div>
-        <input type="submit" />
+        <input  className="submit-form" type="submit" value="Submit" />
       </form>
     </div>
   );

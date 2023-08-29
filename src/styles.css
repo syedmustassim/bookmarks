@@ -1,4 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   font-family: sans-serif;
+  min-height: 100vh;
   text-align: center;
+  background: #242333;
 }
+
+.header {
+  color: #ffffff;
+  padding-top: 20px;
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.bookmark-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bookmark-form label {
+  color: #01b0d3;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.input-box {
+  margin: 10px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid black;
+  background: #091314;
+  width: 300px;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.input-box:hover {
+  border: 1px solid #ffffff;
+}
+
+.input-box:focus {
+  border: 1px solid #01b0d3;
+}
+
+.submit-form {
+  margin-top: 20px;
+  width: 80px;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #242333;
+  transition: 0.4s;
+}
+
+.submit-form:hover {
+  cursor: pointer;
+  background: #01b0d3;
+}
+
+.submit-form:focus {
+  cursor: pointer;
+  background: #01b0d3;
+}
+
+.bookmark-card {
+  border: 1px solid #01b0d3;
+  margin-top: 22px;
+  width: 500px;
+  height: 120px;
+  border-radius: 10px;
+  background-color: #01b0d3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: 0.3s;
+}
+
+.bookmark-card:hover {
+  box-shadow: 0 0 10px 5px #494768;
+}
+
+.secondary-container {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: 18px;
+}
+
+.url {
+  font-size: 18px;
+}
+
+.url a {
+  color: black;
+  transition: 0.3s;
+}
+
+.url a:hover {
+  color: #ffffff;
+}
+
+.icon {
+  color: #242333;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  cursor: pointer;
+  color: rgb(228, 86, 86);
+}
+

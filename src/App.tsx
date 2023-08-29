@@ -7,9 +7,13 @@ import BookmarkList from "./components/BookmarkList";
 export default function App() {
   return (
     <div className="App">
-      <Header title={"Bookmark App"} />
-      <BookmarkForm />
-      <BookmarkList />
+      <div className="main-container">
+        <Header title={"Bookmark App"} />
+        <BookmarkForm />
+      </div>
+      <div className="secondary-container">
+        <BookmarkList />
+      </div>
     </div>
   );
 }
