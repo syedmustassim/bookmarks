@@ -1,2 +1,2 @@
-# neoG-assignment-eight
+# bookmarks app
 Created with CodeSandbox
